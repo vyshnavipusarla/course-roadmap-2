@@ -1,0 +1,6 @@
+langchain-groq
+langgraph
+pydantic>=2
+python-dotenv
+streamlit
+google-api-python-client
