@@ -11,10 +11,9 @@ from urllib.parse import quote_plus
 
 import requests
 from dotenv import load_dotenv
-from langchain_groq import ChatGroq
 from pydantic import BaseModel, Field
 
-from planner import MODEL
+from llm import structured_invoke
 from schemas import Certification
 
 load_dotenv()
@@ -59,7 +58,6 @@ def verify_url(url: str, timeout: float = 8.0) -> bool:
 
 
 def _select(course: str, stage_titles: list[str], level: str, catalog: list[dict]) -> CertSelection:
-    llm = ChatGroq(model=MODEL, temperature=0).with_structured_output(CertSelection)
     lines = "\n".join(f"{c['id']} | {c['name']} | {c['level']} | {', '.join(c['tags'])}" for c in catalog)
     user_msg = (
         f"Course: {course}\n"
@@ -67,7 +65,7 @@ def _select(course: str, stage_titles: list[str], level: str, catalog: list[dict
         f"Learner level: {level}\n\n"
         f"CATALOG (id | name | level | tags):\n{lines}"
     )
-    return llm.invoke([("system", SYSTEM_PROMPT), ("human", user_msg)])
+    return structured_invoke(CertSelection, [("system", SYSTEM_PROMPT), ("human", user_msg)], temperature=0)
 
 
 def _search_links(course: str) -> list[Certification]:

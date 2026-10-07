@@ -1,12 +1,10 @@
-import os
 from dotenv import load_dotenv
-from langchain_groq import ChatGroq
+
+from llm import MODEL, structured_invoke  # noqa: F401  (MODEL re-exported)
 
 from schemas import PlannedRoadmap, Roadmap, Stage
 
 load_dotenv()
-
-MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
 
 SYSTEM_PROMPT = """You are a curriculum designer. Given a course/topic, design a
 complete learning roadmap as 5-8 ordered stages that go from the absolute basics
@@ -23,16 +21,14 @@ Rules:
 
 
 def plan_roadmap(course: str, level: str = "beginner", hours_per_week: int = 5) -> Roadmap:
-    llm = ChatGroq(model=MODEL, temperature=0.3).with_structured_output(PlannedRoadmap)
-
     user_msg = (
         f"Course/topic: {course}\n"
         f"Learner's current level: {level}\n"
         f"Time available: {hours_per_week} hours per week\n"
         "Design the roadmap."
     )
-    planned: PlannedRoadmap = llm.invoke(
-        [("system", SYSTEM_PROMPT), ("human", user_msg)]
+    planned: PlannedRoadmap = structured_invoke(
+        PlannedRoadmap, [("system", SYSTEM_PROMPT), ("human", user_msg)], temperature=0.3
     )
 
     return Roadmap(
