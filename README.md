@@ -172,5 +172,5 @@ The free quota is limited (10,000 units per day by default) and each search cost
 Issues and pull requests are welcome. To add a certification, append an entry to `certifications.json` with `id`, `name`, `provider`, `url`, `cost`, `level` and `tags`.
 
 ## License
-
-Add a license of your choice (for example MIT) as a `LICENSE` file.
+This project is licensed under the MIT License. See the LICENSE file for details.
+ 
