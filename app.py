@@ -1,5 +1,5 @@
 import streamlit as st
-from pipeline import build_roadmap
+from pipeline import stream_roadmap
 
 st.set_page_config(page_title="Course Roadmap Generator", page_icon="🗺️", layout="wide")
 st.title("🗺️ Course Roadmap Generator")
@@ -17,13 +17,32 @@ with st.sidebar:
 course = st.text_input("What do you want to learn?", placeholder="e.g. Docker, Machine Learning, React")
 
 if st.button("Generate roadmap", type="primary") and course.strip():
-    with st.spinner("Designing your roadmap, finding videos and building practice..."):
-        st.session_state["roadmap"] = build_roadmap(course.strip(), level, hours, with_videos, with_practice, with_certs)
+    bar = st.progress(0.0, text="Planning your roadmap...")
+    total, done, final = 0, 0, None
+    try:
+        for node, update in stream_roadmap(course.strip(), level, hours, with_videos, with_practice, with_certs):
+            if node == "plan":
+                n = len(update["plan"].stages)
+                total = n * (int(with_videos) + int(with_practice)) + int(with_certs)
+                bar.progress(0.05, text=f"Planned {n} stages. Gathering videos, practice and certifications...")
+            elif node in ("videos", "practice", "certs"):
+                done += 1
+                bar.progress(min(0.05 + 0.9 * done / max(total, 1), 0.95), text=f"{done}/{total} tasks finished")
+            elif node == "assemble":
+                final = update["roadmap"]
+    except Exception as e:
+        bar.empty()
+        st.error(f"Could not build the roadmap: {e}")
+    else:
+        bar.empty()
+        st.session_state["roadmap"] = final
 
 roadmap = st.session_state.get("roadmap")
 if roadmap:
     total_weeks = sum(s.duration_weeks for s in roadmap.stages)
     st.subheader(f"{roadmap.course}  ·  ~{total_weeks} weeks")
+    for w in roadmap.warnings:
+        st.warning(w)
 
     for i, stage in enumerate(roadmap.stages, 1):
         with st.expander(f"Stage {i}: {stage.title}  ({stage.level}, {stage.duration_weeks} wk)", expanded=(i == 1)):

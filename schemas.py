@@ -68,3 +68,4 @@ class Roadmap(BaseModel):
     course: str
     stages: list[Stage]
     certifications: list[Certification] = []  # Part 4
+    warnings: list[str] = []                  # Part 5: non-fatal problems
