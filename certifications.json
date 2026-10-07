@@ -1,0 +1,691 @@
+[
+  {
+    "id": "aws-cloud-practitioner",
+    "name": "AWS Certified Cloud Practitioner",
+    "provider": "AWS",
+    "url": "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+    "cost": "Paid exam",
+    "level": "beginner",
+    "tags": [
+      "aws",
+      "cloud",
+      "fundamentals"
+    ]
+  },
+  {
+    "id": "aws-solutions-architect-associate",
+    "name": "AWS Certified Solutions Architect - Associate",
+    "provider": "AWS",
+    "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+    "cost": "Paid exam",
+    "level": "intermediate",
+    "tags": [
+      "aws",
+      "cloud",
+      "architecture"
+    ]
+  },
+  {
+    "id": "aws-developer-associate",
+    "name": "AWS Certified Developer - Associate",
+    "provider": "AWS",
+    "url": "https://aws.amazon.com/certification/certified-developer-associate/",
+    "cost": "Paid exam",
+    "level": "intermediate",
+    "tags": [
+      "aws",
+      "cloud",
+      "serverless",
+      "lambda",
+      "backend"
+    ]
+  },
+  {
+    "id": "aws-ai-practitioner",
+    "name": "AWS Certified AI Practitioner",
+    "provider": "AWS",
+    "url": "https://aws.amazon.com/certification/certified-ai-practitioner/",
+    "cost": "Paid exam",
+    "level": "beginner",
+    "tags": [
+      "aws",
+      "ai",
+      "machine learning",
+      "generative ai"
+    ]
+  },
+  {
+    "id": "aws-ml-engineer-associate",
+    "name": "AWS Certified Machine Learning Engineer - Associate",
+    "provider": "AWS",
+    "url": "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+    "cost": "Paid exam",
+    "level": "intermediate",
+    "tags": [
+      "aws",
+      "machine learning",
+      "mlops",
+      "data science"
+    ]
+  },
+  {
+    "id": "azure-az900",
+    "name": "Microsoft Azure Fundamentals (AZ-900)",
+    "provider": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/",
+    "cost": "Paid exam (free learning paths)",
+    "level": "beginner",
+    "tags": [
+      "azure",
+      "cloud",
+      "fundamentals"
+    ]
+  },
+  {
+    "id": "azure-ai900",
+    "name": "Microsoft Azure AI Fundamentals (AI-900)",
+    "provider": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+    "cost": "Paid exam (free learning paths)",
+    "level": "beginner",
+    "tags": [
+      "azure",
+      "ai",
+      "machine learning"
+    ]
+  },
+  {
+    "id": "azure-dp900",
+    "name": "Microsoft Azure Data Fundamentals (DP-900)",
+    "provider": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/",
+    "cost": "Paid exam (free learning paths)",
+    "level": "beginner",
+    "tags": [
+      "azure",
+      "data",
+      "databases",
+      "sql"
+    ]
+  },
+  {
+    "id": "azure-az104",
+    "name": "Microsoft Azure Administrator (AZ-104)",
+    "provider": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/",
+    "cost": "Paid exam (free learning paths)",
+    "level": "intermediate",
+    "tags": [
+      "azure",
+      "cloud",
+      "administration"
+    ]
+  },
+  {
+    "id": "azure-ai102",
+    "name": "Microsoft Azure AI Engineer Associate (AI-102)",
+    "provider": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/",
+    "cost": "Paid exam (free learning paths)",
+    "level": "intermediate",
+    "tags": [
+      "azure",
+      "ai",
+      "generative ai",
+      "llm"
+    ]
+  },
+  {
+    "id": "azure-az400",
+    "name": "Microsoft DevOps Engineer Expert (AZ-400)",
+    "provider": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/",
+    "cost": "Paid exam (free learning paths)",
+    "level": "advanced",
+    "tags": [
+      "azure",
+      "devops",
+      "ci/cd",
+      "docker",
+      "kubernetes"
+    ]
+  },
+  {
+    "id": "power-bi-pl300",
+    "name": "Microsoft Power BI Data Analyst (PL-300)",
+    "provider": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/",
+    "cost": "Paid exam (free learning paths)",
+    "level": "intermediate",
+    "tags": [
+      "power bi",
+      "data analysis",
+      "business intelligence",
+      "visualization"
+    ]
+  },
+  {
+    "id": "github-foundations",
+    "name": "GitHub Foundations",
+    "provider": "GitHub",
+    "url": "https://resources.github.com/learn/certifications/",
+    "cost": "Paid exam",
+    "level": "beginner",
+    "tags": [
+      "git",
+      "github",
+      "version control",
+      "devops"
+    ]
+  },
+  {
+    "id": "gcp-digital-leader",
+    "name": "Google Cloud Digital Leader",
+    "provider": "Google Cloud",
+    "url": "https://cloud.google.com/learn/certification/cloud-digital-leader",
+    "cost": "Paid exam",
+    "level": "beginner",
+    "tags": [
+      "google cloud",
+      "gcp",
+      "cloud",
+      "fundamentals"
+    ]
+  },
+  {
+    "id": "gcp-ace",
+    "name": "Google Cloud Associate Cloud Engineer",
+    "provider": "Google Cloud",
+    "url": "https://cloud.google.com/learn/certification/cloud-engineer",
+    "cost": "Paid exam",
+    "level": "intermediate",
+    "tags": [
+      "google cloud",
+      "gcp",
+      "cloud",
+      "kubernetes",
+      "docker"
+    ]
+  },
+  {
+    "id": "gcp-ml-engineer",
+    "name": "Google Cloud Professional Machine Learning Engineer",
+    "provider": "Google Cloud",
+    "url": "https://cloud.google.com/learn/certification/machine-learning-engineer",
+    "cost": "Paid exam",
+    "level": "advanced",
+    "tags": [
+      "google cloud",
+      "gcp",
+      "machine learning",
+      "mlops"
+    ]
+  },
+  {
+    "id": "gcp-data-engineer",
+    "name": "Google Cloud Professional Data Engineer",
+    "provider": "Google Cloud",
+    "url": "https://cloud.google.com/learn/certification/data-engineer",
+    "cost": "Paid exam",
+    "level": "advanced",
+    "tags": [
+      "google cloud",
+      "gcp",
+      "data engineering",
+      "bigquery",
+      "etl"
+    ]
+  },
+  {
+    "id": "oracle-oci-foundations",
+    "name": "Oracle Cloud Infrastructure Foundations Associate",
+    "provider": "Oracle",
+    "url": "https://education.oracle.com/oracle-cloud-infrastructure-foundations-associate/",
+    "cost": "Paid exam",
+    "level": "beginner",
+    "tags": [
+      "oracle",
+      "oci",
+      "cloud",
+      "fundamentals"
+    ]
+  },
+  {
+    "id": "google-data-analytics",
+    "name": "Google Data Analytics Professional Certificate",
+    "provider": "Google (Coursera)",
+    "url": "https://www.coursera.org/professional-certificates/google-data-analytics",
+    "cost": "Coursera subscription",
+    "level": "beginner",
+    "tags": [
+      "data analysis",
+      "sql",
+      "tableau",
+      "r",
+      "spreadsheets"
+    ]
+  },
+  {
+    "id": "google-cybersecurity",
+    "name": "Google Cybersecurity Professional Certificate",
+    "provider": "Google (Coursera)",
+    "url": "https://www.coursera.org/professional-certificates/google-cybersecurity",
+    "cost": "Coursera subscription",
+    "level": "beginner",
+    "tags": [
+      "cybersecurity",
+      "security",
+      "python",
+      "linux"
+    ]
+  },
+  {
+    "id": "google-it-support",
+    "name": "Google IT Support Professional Certificate",
+    "provider": "Google (Coursera)",
+    "url": "https://www.coursera.org/professional-certificates/google-it-support",
+    "cost": "Coursera subscription",
+    "level": "beginner",
+    "tags": [
+      "it support",
+      "networking",
+      "linux",
+      "operating systems"
+    ]
+  },
+  {
+    "id": "google-ux-design",
+    "name": "Google UX Design Professional Certificate",
+    "provider": "Google (Coursera)",
+    "url": "https://www.coursera.org/professional-certificates/google-ux-design",
+    "cost": "Coursera subscription",
+    "level": "beginner",
+    "tags": [
+      "ux",
+      "ui",
+      "design",
+      "figma"
+    ]
+  },
+  {
+    "id": "google-project-management",
+    "name": "Google Project Management Professional Certificate",
+    "provider": "Google (Coursera)",
+    "url": "https://www.coursera.org/professional-certificates/google-project-management",
+    "cost": "Coursera subscription",
+    "level": "beginner",
+    "tags": [
+      "project management",
+      "agile"
+    ]
+  },
+  {
+    "id": "ibm-data-science",
+    "name": "IBM Data Science Professional Certificate",
+    "provider": "IBM (Coursera)",
+    "url": "https://www.coursera.org/professional-certificates/ibm-data-science",
+    "cost": "Coursera subscription",
+    "level": "beginner",
+    "tags": [
+      "data science",
+      "python",
+      "sql",
+      "machine learning"
+    ]
+  },
+  {
+    "id": "ml-specialization",
+    "name": "Machine Learning Specialization",
+    "provider": "DeepLearning.AI / Stanford (Coursera)",
+    "url": "https://www.coursera.org/specializations/machine-learning-introduction",
+    "cost": "Coursera subscription",
+    "level": "beginner",
+    "tags": [
+      "machine learning",
+      "supervised learning",
+      "python",
+      "ai"
+    ]
+  },
+  {
+    "id": "dl-specialization",
+    "name": "Deep Learning Specialization",
+    "provider": "DeepLearning.AI (Coursera)",
+    "url": "https://www.coursera.org/specializations/deep-learning",
+    "cost": "Coursera subscription",
+    "level": "intermediate",
+    "tags": [
+      "deep learning",
+      "neural networks",
+      "ai"
+    ]
+  },
+  {
+    "id": "meta-frontend",
+    "name": "Meta Front-End Developer Professional Certificate",
+    "provider": "Meta (Coursera)",
+    "url": "https://www.coursera.org/professional-certificates/meta-front-end-developer",
+    "cost": "Coursera subscription",
+    "level": "beginner",
+    "tags": [
+      "frontend",
+      "react",
+      "javascript",
+      "html",
+      "css",
+      "web development"
+    ]
+  },
+  {
+    "id": "freecodecamp",
+    "name": "freeCodeCamp Certifications",
+    "provider": "freeCodeCamp",
+    "url": "https://www.freecodecamp.org/learn",
+    "cost": "Free",
+    "level": "beginner",
+    "tags": [
+      "web development",
+      "javascript",
+      "python",
+      "html",
+      "css",
+      "data analysis",
+      "machine learning"
+    ]
+  },
+  {
+    "id": "hf-agents-course",
+    "name": "Hugging Face AI Agents Course (certificate of completion)",
+    "provider": "Hugging Face",
+    "url": "https://huggingface.co/learn/agents-course",
+    "cost": "Free",
+    "level": "intermediate",
+    "tags": [
+      "ai agents",
+      "llm",
+      "langgraph",
+      "generative ai",
+      "rag"
+    ]
+  },
+  {
+    "id": "nvidia-dli",
+    "name": "NVIDIA Deep Learning Institute Certifications",
+    "provider": "NVIDIA",
+    "url": "https://www.nvidia.com/en-us/learn/certification/",
+    "cost": "Paid exam",
+    "level": "intermediate",
+    "tags": [
+      "deep learning",
+      "generative ai",
+      "llm",
+      "gpu"
+    ]
+  },
+  {
+    "id": "databricks-de-associate",
+    "name": "Databricks Certified Data Engineer Associate",
+    "provider": "Databricks",
+    "url": "https://www.databricks.com/learn/certification/data-engineer-associate",
+    "cost": "Paid exam",
+    "level": "intermediate",
+    "tags": [
+      "databricks",
+      "data engineering",
+      "spark",
+      "etl"
+    ]
+  },
+  {
+    "id": "databricks-genai-associate",
+    "name": "Databricks Certified Generative AI Engineer Associate",
+    "provider": "Databricks",
+    "url": "https://www.databricks.com/learn/certification/genai-engineer-associate",
+    "cost": "Paid exam",
+    "level": "intermediate",
+    "tags": [
+      "databricks",
+      "generative ai",
+      "llm",
+      "rag"
+    ]
+  },
+  {
+    "id": "snowpro-core",
+    "name": "SnowPro Core Certification",
+    "provider": "Snowflake",
+    "url": "https://learn.snowflake.com/en/certifications/snowpro-core/",
+    "cost": "Paid exam",
+    "level": "intermediate",
+    "tags": [
+      "snowflake",
+      "data warehouse",
+      "sql"
+    ]
+  },
+  {
+    "id": "tableau-desktop-specialist",
+    "name": "Tableau Desktop Specialist",
+    "provider": "Tableau (Salesforce)",
+    "url": "https://www.tableau.com/learn/certification/desktop-specialist",
+    "cost": "Paid exam",
+    "level": "beginner",
+    "tags": [
+      "tableau",
+      "data visualization",
+      "business intelligence"
+    ]
+  },
+  {
+    "id": "kcna",
+    "name": "Kubernetes and Cloud Native Associate (KCNA)",
+    "provider": "Linux Foundation / CNCF",
+    "url": "https://training.linuxfoundation.org/certification/kubernetes-and-cloud-native-associate-kcna/",
+    "cost": "Paid exam",
+    "level": "beginner",
+    "tags": [
+      "kubernetes",
+      "cloud native",
+      "containers",
+      "docker"
+    ]
+  },
+  {
+    "id": "ckad",
+    "name": "Certified Kubernetes Application Developer (CKAD)",
+    "provider": "Linux Foundation / CNCF",
+    "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/",
+    "cost": "Paid exam",
+    "level": "intermediate",
+    "tags": [
+      "kubernetes",
+      "containers",
+      "docker",
+      "devops"
+    ]
+  },
+  {
+    "id": "cka",
+    "name": "Certified Kubernetes Administrator (CKA)",
+    "provider": "Linux Foundation / CNCF",
+    "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/",
+    "cost": "Paid exam",
+    "level": "advanced",
+    "tags": [
+      "kubernetes",
+      "containers",
+      "docker",
+      "devops"
+    ]
+  },
+  {
+    "id": "lfcs",
+    "name": "Linux Foundation Certified System Administrator (LFCS)",
+    "provider": "Linux Foundation",
+    "url": "https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/",
+    "cost": "Paid exam",
+    "level": "intermediate",
+    "tags": [
+      "linux",
+      "sysadmin"
+    ]
+  },
+  {
+    "id": "rhcsa",
+    "name": "Red Hat Certified System Administrator (RHCSA)",
+    "provider": "Red Hat",
+    "url": "https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam",
+    "cost": "Paid exam",
+    "level": "intermediate",
+    "tags": [
+      "linux",
+      "red hat",
+      "sysadmin"
+    ]
+  },
+  {
+    "id": "terraform-associate",
+    "name": "HashiCorp Certified: Terraform Associate",
+    "provider": "HashiCorp",
+    "url": "https://developer.hashicorp.com/certifications/infrastructure-automation",
+    "cost": "Paid exam",
+    "level": "intermediate",
+    "tags": [
+      "terraform",
+      "infrastructure as code",
+      "devops"
+    ]
+  },
+  {
+    "id": "python-pcep",
+    "name": "PCEP - Certified Entry-Level Python Programmer",
+    "provider": "Python Institute",
+    "url": "https://pythoninstitute.org/pcep",
+    "cost": "Paid exam",
+    "level": "beginner",
+    "tags": [
+      "python",
+      "programming"
+    ]
+  },
+  {
+    "id": "python-pcap",
+    "name": "PCAP - Certified Associate in Python Programming",
+    "provider": "Python Institute",
+    "url": "https://pythoninstitute.org/pcap",
+    "cost": "Paid exam",
+    "level": "intermediate",
+    "tags": [
+      "python",
+      "programming"
+    ]
+  },
+  {
+    "id": "comptia-aplus",
+    "name": "CompTIA A+",
+    "provider": "CompTIA",
+    "url": "https://www.comptia.org/certifications/a",
+    "cost": "Paid exam",
+    "level": "beginner",
+    "tags": [
+      "it support",
+      "hardware",
+      "troubleshooting"
+    ]
+  },
+  {
+    "id": "comptia-network-plus",
+    "name": "CompTIA Network+",
+    "provider": "CompTIA",
+    "url": "https://www.comptia.org/certifications/network",
+    "cost": "Paid exam",
+    "level": "beginner",
+    "tags": [
+      "networking"
+    ]
+  },
+  {
+    "id": "comptia-security-plus",
+    "name": "CompTIA Security+",
+    "provider": "CompTIA",
+    "url": "https://www.comptia.org/certifications/security",
+    "cost": "Paid exam",
+    "level": "intermediate",
+    "tags": [
+      "cybersecurity",
+      "security"
+    ]
+  },
+  {
+    "id": "isc2-cc",
+    "name": "ISC2 Certified in Cybersecurity (CC)",
+    "provider": "ISC2",
+    "url": "https://www.isc2.org/certifications/cc",
+    "cost": "Free exam via ISC2 programs (check eligibility)",
+    "level": "beginner",
+    "tags": [
+      "cybersecurity"
+    ]
+  },
+  {
+    "id": "cissp",
+    "name": "CISSP",
+    "provider": "ISC2",
+    "url": "https://www.isc2.org/certifications/cissp",
+    "cost": "Paid exam",
+    "level": "advanced",
+    "tags": [
+      "cybersecurity",
+      "security management"
+    ]
+  },
+  {
+    "id": "ccna",
+    "name": "Cisco Certified Network Associate (CCNA)",
+    "provider": "Cisco",
+    "url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html",
+    "cost": "Paid exam",
+    "level": "intermediate",
+    "tags": [
+      "networking",
+      "cisco"
+    ]
+  },
+  {
+    "id": "pmp",
+    "name": "Project Management Professional (PMP)",
+    "provider": "PMI",
+    "url": "https://www.pmi.org/certifications/project-management-pmp",
+    "cost": "Paid exam",
+    "level": "advanced",
+    "tags": [
+      "project management"
+    ]
+  },
+  {
+    "id": "psm-1",
+    "name": "Professional Scrum Master I (PSM I)",
+    "provider": "Scrum.org",
+    "url": "https://www.scrum.org/assessments/professional-scrum-master-i-certification",
+    "cost": "Paid exam",
+    "level": "beginner",
+    "tags": [
+      "scrum",
+      "agile",
+      "project management"
+    ]
+  },
+  {
+    "id": "istqb-ctfl",
+    "name": "ISTQB Certified Tester Foundation Level",
+    "provider": "ISTQB",
+    "url": "https://www.istqb.org/certifications",
+    "cost": "Paid exam",
+    "level": "beginner",
+    "tags": [
+      "software testing",
+      "qa",
+      "test cases"
+    ]
+  }
+]

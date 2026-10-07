@@ -45,7 +45,10 @@ class Certification(BaseModel):
     provider: str
     url: str
     cost: Optional[str] = None
-    verified: bool = False
+    level: str = ""
+    why: str = ""
+    verified: bool = False          # True only if the link answered successfully
+    is_search_link: bool = False    # True for 'browse more' fallback links
 
 
 class Exercise(BaseModel):

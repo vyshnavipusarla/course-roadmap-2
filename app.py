@@ -12,12 +12,13 @@ with st.sidebar:
     with_videos = st.checkbox("Fetch YouTube videos", value=True,
                               help="Each new topic uses roughly 1,200 units of YouTube API quota. Results are cached.")
     with_practice = st.checkbox("Generate exercises & projects", value=True)
+    with_certs = st.checkbox("Find certifications", value=True)
 
 course = st.text_input("What do you want to learn?", placeholder="e.g. Docker, Machine Learning, React")
 
 if st.button("Generate roadmap", type="primary") and course.strip():
     with st.spinner("Designing your roadmap, finding videos and building practice..."):
-        st.session_state["roadmap"] = build_roadmap(course.strip(), level, hours, with_videos, with_practice)
+        st.session_state["roadmap"] = build_roadmap(course.strip(), level, hours, with_videos, with_practice, with_certs)
 
 roadmap = st.session_state.get("roadmap")
 if roadmap:
@@ -59,3 +60,17 @@ if roadmap:
                     st.checkbox(d, key=f"s{i}-{p.title}-{d}")
                 if p.stretch_goal:
                     st.caption(f"🚀 Stretch goal: {p.stretch_goal}")
+
+    if roadmap.certifications:
+        st.divider()
+        st.subheader("🎓 Certifications to aim for")
+        for c in roadmap.certifications:
+            if c.is_search_link:
+                st.markdown(f"🔎 [{c.name}]({c.url})")
+                st.caption(c.why)
+                continue
+            badge = "✅ link checked" if c.verified else "⚠️ couldn't auto-check the link, open it to confirm"
+            st.markdown(f"**[{c.name}]({c.url})**  ·  {c.provider}")
+            st.caption(f"{c.level} · {c.cost} · {badge}")
+            st.markdown(c.why)
+        st.caption("Exam details and fees change; always confirm on the provider's site.")
